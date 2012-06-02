@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  
+  <title>Animating &middot; jQuery Masonry</title>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <link rel="stylesheet" href="../css/style.css" />
+  
+  
+  <!-- scripts at bottom of page -->
+
+</head>
+<body class="docs ">
+  
+  <nav id="site-nav">
+    <h1><a href="../index.html">jQuery Masonry</a></h1>
+    
+    <h2>Docs</h2>
+    
+    <ul class="docs-list">
+      
+        
+          
+            <li><a href="../docs/intro.html">Introduction</a>
+          
+        
+      
+        
+          
+            <li><a href="../docs/options.html">Options</a>
+          
+        
+      
+        
+          
+            <li><a href="../docs/methods.html">Methods</a>
+          
+        
+      
+        
+        <li class="current"><a href="#content">Animating</a>
+          <ul class="toc">
+            
+            <li><a href="#jquery">jQuery</a></li>
+            
+            <li><a href="#css_transitions">CSS transitions</a></li>
+            
+            <li><a href="#modernizr">Modernizr</a></li>
+            
+          </ul>
+        </li>
+        
+      
+        
+          
+            <li><a href="../docs/help.html">Help</a>
+          
+        
+      
+    </ul>
+
+    <h2>Demos</h2>
+    
+    <ul class="demos-list">
+      
+        
+          
+            <li><a href="../demos/basic-single-column.html">Basic single-column</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/basic-multi-column.html">Basic multi-column</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/images.html">Images</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/tumblelog.html">Tumblelog example</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/animating-jquery.html">Animating with jQuery</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/animating-css-transitions.html">Animating with CSS Transitions</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/animating-modernizr.html">Animating with Modernizr</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/adding-items.html">Adding items</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/infinite-scroll.html">Infinite Scroll</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/gutters.html">Gutters</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/right-to-left.html">Right-to-left</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/centered.html">Centered</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/fluid.html">Fluid</a>
+          
+        
+      
+    </ul>
+    
+  </nav> <!-- #site-nav -->
+  
+  <section id="content">
+    
+    
+      <h1>Animating</h1>
+    
+    
+    <p>Rearrangements can be animated when the container is resized.</p>
+
+<h2 id='jquery'>jQuery</h2>
+
+<p>To animate Masonry layout changes with jQuery, set the <code>isAnimated</code> option to <code>true</code>.</p>
+<div class='highlight'><pre><code class='javascript'><span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;#container&#39;</span><span class='p'>).</span><span class='nx'>masonry</span><span class='p'>({</span>
+  <span class='c1'>// options...</span>
+  <span class='nx'>isAnimated</span><span class='o'>:</span> <span class='kc'>true</span>
+<span class='p'>});</span>
+</code></pre>
+</div>
+<p><a href='../demos/animating-jquery.html'>See Demo: Animating with jQuery</a>.</p>
+
+<p>You can pass in jQuery animation options are set with the <a href='options.html#animationoptions'><code>animationOptions</code> option</a>.</p>
+<div class='highlight'><pre><code class='javascript'><span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;#container&#39;</span><span class='p'>).</span><span class='nx'>masonry</span><span class='p'>({</span>
+  <span class='c1'>// options...</span>
+  <span class='nx'>isAnimated</span><span class='o'>:</span> <span class='kc'>true</span><span class='p'>,</span>
+  <span class='nx'>animationOptions</span><span class='o'>:</span> <span class='p'>{</span>
+    <span class='nx'>duration</span><span class='o'>:</span> <span class='mi'>750</span><span class='p'>,</span>
+    <span class='nx'>easing</span><span class='o'>:</span> <span class='s1'>&#39;linear&#39;</span><span class='p'>,</span>
+    <span class='nx'>queue</span><span class='o'>:</span> <span class='kc'>false</span>
+  <span class='p'>}</span>
+<span class='p'>});</span>
+</code></pre>
+</div>
+<h2 id='css_transitions'>CSS transitions</h2>
+
+<p>Alternatively, you can rely on CSS3 transitions to animate layout rearrangements. Enabling transitions is recommended, as they provide for better browser performance over jQuery animation.</p>
+
+<p>In your CSS, add transition styles below. The Masonry plugin will add a class of <code>masonry</code> to the container after the first arrangement so transitions can be applied afterward. Item elements will have a class of <code>masonry-brick</code> added.</p>
+
+<p><a href='../demos/animating-css-transitions.html'>See Demo: Animating with CSS transitions</a>.</p>
+<div class='highlight'><pre><code class='css'><span class='c'>/**** Transitions ****/</span>
+
+<span class='nc'>.masonry</span><span class='o'>,</span>
+<span class='nc'>.masonry</span> <span class='nc'>.masonry-brick</span> <span class='p'>{</span>
+  <span class='o'>-</span><span class='n'>webkit</span><span class='o'>-</span><span class='n'>transition</span><span class='o'>-</span><span class='n'>duration</span><span class='o'>:</span> <span class='m'>0.7s</span><span class='p'>;</span>
+     <span class='o'>-</span><span class='n'>moz</span><span class='o'>-</span><span class='n'>transition</span><span class='o'>-</span><span class='n'>duration</span><span class='o'>:</span> <span class='m'>0.7s</span><span class='p'>;</span>
+       <span class='o'>-</span><span class='err'>o</span><span class='o'>-</span><span class='n'>transition</span><span class='o'>-</span><span class='n'>duration</span><span class='o'>:</span> <span class='m'>0.7s</span><span class='p'>;</span>
+          <span class='n'>transition</span><span class='o'>-</span><span class='n'>duration</span><span class='o'>:</span> <span class='m'>0.7s</span><span class='p'>;</span>
+<span class='p'>}</span>
+
+<span class='nc'>.masonry</span> <span class='p'>{</span>
+  <span class='o'>-</span><span class='n'>webkit</span><span class='o'>-</span><span class='n'>transition</span><span class='o'>-</span><span class='n'>property</span><span class='o'>:</span> <span class='k'>height</span><span class='o'>,</span> <span class='k'>width</span><span class='p'>;</span>
+     <span class='o'>-</span><span class='n'>moz</span><span class='o'>-</span><span class='n'>transition</span><span class='o'>-</span><span class='n'>property</span><span class='o'>:</span> <span class='k'>height</span><span class='o'>,</span> <span class='k'>width</span><span class='p'>;</span>
+       <span class='o'>-</span><span class='err'>o</span><span class='o'>-</span><span class='n'>transition</span><span class='o'>-</span><span class='n'>property</span><span class='o'>:</span> <span class='k'>height</span><span class='o'>,</span> <span class='k'>width</span><span class='p'>;</span>
+          <span class='n'>transition</span><span class='o'>-</span><span class='n'>property</span><span class='o'>:</span> <span class='k'>height</span><span class='o'>,</span> <span class='k'>width</span><span class='p'>;</span>
+<span class='p'>}</span>
+
+<span class='nc'>.masonry</span> <span class='nc'>.masonry-brick</span> <span class='p'>{</span>
+  <span class='o'>-</span><span class='n'>webkit</span><span class='o'>-</span><span class='n'>transition</span><span class='o'>-</span><span class='n'>property</span><span class='o'>:</span> <span class='k'>left</span><span class='o'>,</span> <span class='k'>right</span><span class='o'>,</span> <span class='k'>top</span><span class='p'>;</span>
+     <span class='o'>-</span><span class='n'>moz</span><span class='o'>-</span><span class='n'>transition</span><span class='o'>-</span><span class='n'>property</span><span class='o'>:</span> <span class='k'>left</span><span class='o'>,</span> <span class='k'>right</span><span class='o'>,</span> <span class='k'>top</span><span class='p'>;</span>
+       <span class='o'>-</span><span class='err'>o</span><span class='o'>-</span><span class='n'>transition</span><span class='o'>-</span><span class='n'>property</span><span class='o'>:</span> <span class='k'>left</span><span class='o'>,</span> <span class='k'>right</span><span class='o'>,</span> <span class='k'>top</span><span class='p'>;</span>
+          <span class='n'>transition</span><span class='o'>-</span><span class='n'>property</span><span class='o'>:</span> <span class='k'>left</span><span class='o'>,</span> <span class='k'>right</span><span class='o'>,</span> <span class='k'>top</span><span class='p'>;</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='modernizr'>Modernizr</h2>
+
+<p>To get the best of both worlds, you can use <a href='http://www.modernizr.com/'>Modernizr</a> to detect browser support for CSS transitions. Add the transitions styles above, then enable <code>animated</code> based on Modernizr&#8217;s detected support for transitions. This will allow browsers that support CSS transitions to use them, and browsers without support to use jQuery animation.</p>
+
+<p><a href='../demos/animating-modernizr.html'>See Demo: Animating with Modernizr</a>.</p>
+<div class='highlight'><pre><code class='javascript'><span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;#container&#39;</span><span class='p'>).</span><span class='nx'>masonry</span><span class='p'>({</span>
+  <span class='c1'>// options...</span>
+  <span class='nx'>isAnimated</span><span class='o'>:</span> <span class='o'>!</span><span class='nx'>Modernizr</span><span class='p'>.</span><span class='nx'>csstransitions</span>
+<span class='p'>});</span>
+</code></pre>
+</div>
+    
+    <footer id="site-footer">
+      jQuery Masonry by <a href="http://desandro.com">David DeSandro</a>
+    </footer>
+    
+  </section> <!-- #content -->
+
+</body>
+</html>

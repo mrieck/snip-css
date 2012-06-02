@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  
+  <title>Help &middot; jQuery Masonry</title>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <link rel="stylesheet" href="../css/style.css" />
+  
+  
+  <!-- scripts at bottom of page -->
+
+</head>
+<body class="docs ">
+  
+  <nav id="site-nav">
+    <h1><a href="../index.html">jQuery Masonry</a></h1>
+    
+    <h2>Docs</h2>
+    
+    <ul class="docs-list">
+      
+        
+          
+            <li><a href="../docs/intro.html">Introduction</a>
+          
+        
+      
+        
+          
+            <li><a href="../docs/options.html">Options</a>
+          
+        
+      
+        
+          
+            <li><a href="../docs/methods.html">Methods</a>
+          
+        
+      
+        
+          
+            <li><a href="../docs/animating.html">Animating</a>
+          
+        
+      
+        
+        <li class="current"><a href="#content">Help</a>
+          <ul class="toc">
+            
+            <li><a href="#reporting_bugs_and_issues">Reporting bugs and issues</a></li>
+            
+            <li><a href="#support_license">Support license</a></li>
+            
+            <li><a href="#additional_resources">Additional resources</a></li>
+            
+            <li><a href="#unloaded_media_and_overlapping">Unloaded media and overlapping</a></li>
+            
+            <li><a href="#fontface_fonts">@font-face fonts</a></li>
+            
+            <li><a href="#filtering">Filtering</a></li>
+            
+            <li><a href="#getting_data">Getting data</a></li>
+            
+            <li><a href="#other_frameworks">Other frameworks</a></li>
+            
+          </ul>
+        </li>
+        
+      
+    </ul>
+
+    <h2>Demos</h2>
+    
+    <ul class="demos-list">
+      
+        
+          
+            <li><a href="../demos/basic-single-column.html">Basic single-column</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/basic-multi-column.html">Basic multi-column</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/images.html">Images</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/tumblelog.html">Tumblelog example</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/animating-jquery.html">Animating with jQuery</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/animating-css-transitions.html">Animating with CSS Transitions</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/animating-modernizr.html">Animating with Modernizr</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/adding-items.html">Adding items</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/infinite-scroll.html">Infinite Scroll</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/gutters.html">Gutters</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/right-to-left.html">Right-to-left</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/centered.html">Centered</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/fluid.html">Fluid</a>
+          
+        
+      
+    </ul>
+    
+  </nav> <!-- #site-nav -->
+  
+  <section id="content">
+    
+    
+      <h1>Help</h1>
+    
+    
+    <p>jQuery Masonry is a fairly popular plugin. Chances are your issue has already been encountered by someone else.</p>
+
+<h2 id='reporting_bugs_and_issues'>Reporting bugs and issues</h2>
+
+<p><a href='http://github.com/desandro/masonry/issues'>Report bugs and issues on GitHub</a>.</p>
+
+<h3 id='issues-guidelines'>Guidelines</h3>
+
+<ul>
+<li>Look over open and closed issues before submitting yours.</li>
+
+<li>Add a link to a live site with the bug. If the project is confidential, try re-creating it in <a href='http://jsfiddle.net'>jsFiddle</a>.</li>
+</ul>
+
+<p>The issues tracker is for bugs and issues &#8211; when Masonry doesn&#8217;t work as expected. It is not for implementation issues &#8211; when you are having trouble setting up Masonry. Consider a <a href='http://metafizzy.co/#support-license'>Support License</a> for implementation issues. If you&#8217;re not sure, go ahead and submit an issue.</p>
+
+<h2 id='support_license'>Support license</h2>
+
+<p>If you&#8217;ve tried everything and would really like to get my eyes looking at your code, you can purchase a <a href='http://metafizzy.co/#support-license'>Support License from Metafizzy</a>.</p>
+
+<h2 id='additional_resources'>Additional resources</h2>
+
+<ul>
+<li>The <a href='http://metafizzy.co/blog/'>Metafizzy blog</a> has posts that cover specialized use cases</li>
+
+<li><a href='http://www.delicious.com/desandro/jquerymasonry'>Sites using Masonry on Delicious</a></li>
+
+<li><a href='http://zootool.com/user/desandro/tag:masonry'>Sites using Masonry on Zootool</a> (has screenshots)</li>
+
+<li><a href='http://stackoverflow.com/search?q=masonry'>Stack Overflow questions about Masonry</a></li>
+
+<li>Other resources that are <a href='http://www.delicious.com/desandro/likemasonrybutnot'>like Masonry but not</a></li>
+</ul>
+
+<h2 id='unloaded_media_and_overlapping'>Unloaded media and overlapping</h2>
+
+<p>The number one issue that pops up is overlapping content. This is most likely due to unloaded images.</p>
+
+<h3 id='imagesloaded_plugin'>imagesLoaded plugin</h3>
+
+<p>The easiest solution is to use the <a href='intro.html#imagesloaded_plugin'>imagesLoaded plugin</a> as shown in the intro. This small plugin will trigger a callback after all the images in the specified content have been loaded.</p>
+
+<p><a href='../demos/images.html'>See Demo: Images</a>.</p>
+
+<h3 id='inline_dimensions'>Inline dimensions</h3>
+
+<p>Or you can specify the width and height of images inline.</p>
+<div class='highlight'><pre><code class='html'><span class='nt'>&lt;img</span> <span class='na'>src=</span><span class='s'>&quot;img-file.jpg&quot;</span> <span class='na'>width=</span><span class='s'>&quot;280&quot;</span> <span class='na'>height=</span><span class='s'>&quot;160&quot;</span> <span class='nt'>/&gt;</span>
+</code></pre>
+</div>
+<p>If you’re using a PHP-based CMS, you can use the <a href='http://php.net/manual/en/function.getimagesize.php'>getimagesize</a> function.</p>
+
+<h3 id='windowload'>$(window).load()</h3>
+
+<p>Another solution is to initialize Masonry inside <code>$(window).load()</code> instead of <code>$(document).ready()</code>. This will trigger Masonry after all the media on the page has loaded &#8211; images, fonts, external scripts and stylesheets, etc. This method is not recommended as it can cause ugly wait times.</p>
+<div class='highlight'><pre><code class='javascript'><span class='nx'>$</span><span class='p'>(</span><span class='nb'>window</span><span class='p'>).</span><span class='nx'>load</span><span class='p'>(</span><span class='kd'>function</span><span class='p'>(){</span>
+  <span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;#container&#39;</span><span class='p'>).</span><span class='nx'>masonry</span><span class='p'>({</span>
+    <span class='c1'>// options...</span>
+  <span class='p'>});</span>
+<span class='p'>});</span>
+</code></pre>
+</div>
+<h2 id='fontface_fonts'>@font-face fonts</h2>
+
+<p>Both Typekit and Google WebFont Loader provide font events to control scripts based on how fonts are loaded.</p>
+
+<ul>
+<li><a href='http://blog.typekit.com/2010/10/18/more-control-with-typekits-font-events/'>Typekit font events</a></li>
+
+<li><a href='http://code.google.com/apis/webfonts/docs/webfont_loader.html#Events'>Google WebFont Loader: Events</a></li>
+</ul>
+
+<h2 id='filtering'>Filtering</h2>
+
+<p>Filtering with Masonry is officially unsupported as of v2.0. Use <a href='http://isotope.metafizzy.co'>Isotope</a> instead. Isotope shares a majority Masonry&#8217;s features. It also has additional powerful features like filtering and sorting built right in, so you probably won&#8217;t be missing any functionality.</p>
+
+<h2 id='getting_data'>Getting data</h2>
+
+<p>You can access all the options and properties in a Masonry instance using the <code>.data()</code> method with the namespace <code>&#39;masonry&#39;</code>.</p>
+<div class='highlight'><pre><code class='javascript'><span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;#container&#39;</span><span class='p'>).</span><span class='nx'>data</span><span class='p'>(</span><span class='s1'>&#39;masonry&#39;</span><span class='p'>);</span>
+</code></pre>
+</div>
+<h2 id='other_frameworks'>Other frameworks</h2>
+
+<ul>
+<li><a href='http://mootools.net/forge/p/moomasonry'>mooMasonry for MooTools</a></li>
+
+<li><a href='http://www.sthoughts.com/prototype-masonry/'>Prototype Masonry for Prototype JS</a></li>
+</ul>
+    
+    <footer id="site-footer">
+      jQuery Masonry by <a href="http://desandro.com">David DeSandro</a>
+    </footer>
+    
+  </section> <!-- #content -->
+
+</body>
+</html>

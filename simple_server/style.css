@@ -1,0 +1,173 @@
+
+/*This is a bunch of bullshit */
+body
+{
+	margin:0px;
+	padding:0px;
+}
+
+#markunique_pagecontainer hr
+{
+    padding:0px;
+    margin:0px;
+}
+
+#markunique_pagecontainer .thiswillbeoverwrittenanyway
+{
+    border: 1px solid black;
+}
+
+
+#markunique_pagecontainer
+{
+	margin-left:35px;
+	margin-right:10px;
+	
+}
+
+
+#markunique_pagecontainer h1
+{
+    margin-top:0px;
+    padding-top:0px;
+}
+
+div.headerdiv1
+{
+    margin-top:0px;
+    padding-top:0px;
+    font-size:2.0em;
+    font-family: Trebuchet MS, Tahoma, Verdana;
+}
+
+div.headerdiv2
+{
+    margin-top:0px;
+    padding-top:0px;
+    font-size:1.6em;
+    font-family: Trebuchet MS, Tahoma, Verdana;
+}
+
+div.headerdiv3
+{
+    margin-top:0px;
+    padding-top:0px;
+    font-size:1.3em;
+    font-family: Trebuchet MS, Tahoma, Verdana;
+}
+
+div.smalldiv
+{
+    margin-top:0px;
+    padding-top:0px;
+    font-size:0.6em;
+}
+
+img.delete_image
+{
+    cursor: pointer;
+}
+
+#type_container
+{
+	min-height: 40px;
+	max-height: 40px;	
+}
+
+#markunique_pagecontainer h3
+{	
+	margin:0px;
+	padding: 0px;
+}
+
+#var_table
+{
+	font-size:0.6em;
+	background: white;
+}
+a.varlink
+{
+	font-weight:bold;
+	font-size:1.4em;	
+	cursor:pointer;
+}
+
+#var_table a.selected
+{
+	font-weight:bold;
+	font-size:0.8em;
+	background: yellow;
+}
+
+button#add_source
+{
+	font-size:1.2em;
+}
+
+
+
+table.addsource_table th, div.linkup_header, div.properties_header, div.buildcontainer_header
+{
+	border: 1px solid #CCC;
+	background: #F6F6F6 url(js/jqueryui/css/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x;
+	font-weight: bold;
+	color: #1C94C4;
+	padding-left:8px;
+
+	width:100%;
+	font-size:1.6em;	
+
+}
+
+div.linkup_header
+{
+	width:98%;
+	text-align:center;
+}
+
+div.vieweditcontainer
+{
+	
+
+}
+
+.view_widget_container
+{
+	margin-left:50px;
+}
+
+table.view_widget
+{
+	width: 160px !important;
+	height:140px !important;
+	border: 1px solid black;
+}
+
+table.view_widget td
+{
+	text-align:center;
+	border: 1px solid #CCC;	
+}
+
+
+
+
+/******* HEADER ***********/
+.markheader 
+{
+	background: url("./img/header_back3.png") no-repeat scroll left top #032629;
+	clear: left;height: 98px;padding: 0;position: relative;top: 0px;width: 100%;
+}
+.markheader .title {color:white; font-size: 28px;font-weight: normal;letter-spacing: -1px;line-height: 28px;margin: 0;
+padding: 22px 15px 11px 180px;}
+.markheader .title a {background: none repeat scroll 0 0 gray;color: white;padding: 5px;text-decoration: none;}
+.markheader a:active {border: 0 none;color: #00A0E3;text-decoration: underline;}
+.markheader a:link {border: 0 none;color: #00A0E3;text-decoration: none;}
+.markheader a:active {color: #FFFFFF;text-decoration: underline;}
+.markheader a:link {color: #FFFFFF;text-decoration: none;}
+.markheader a {}
+.markheader a {outline: medium none;}
+.markheader .Desc {color: #82D7F2;font-family: Arial;font-size: 14px;font-weight: bold;letter-spacing: -1px;line-height: 14px;margin: 0 0 0 184px;padding: 0;}
+
+
+

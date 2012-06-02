@@ -1,0 +1,38 @@
+/*CSS for id: 80*/
+#author-info,article.post, article.page {margin-bottom: 72px;}
+article, aside, details, figcaption, figure,footer,header, hgroup, nav, section {display: block;}
+.page-header,.entry-content {word-wrap: break-word;}
+.page-header {margin: 0 0 18px;}
+.page-header {border-bottom: 1px solid #EEEEEE;margin: 18px 0;padding-bottom: 17px;}
+ section {display: block;}
+.page-header h1 {line-height: 1;}
+h1, h2, h3, h4, h5, h6, .clear {clear: both;}
+h1 {font-size: 30px;line-height: 36px;}
+h1, h2, h3, h4, h5, h6 {font-weight: bold;margin: 0;text-rendering: optimizelegibility;}
+a {color: #0088CC;text-decoration: none;}
+.entry-meta {color: #999999;font-family: "PT Sans","Helvetica Neue",Arial,sans-serif;font-size: 12px;letter-spacing: 1px;padding-top: 4px;text-transform: uppercase;}
+.entry-meta a,.entry-meta a:hover {color: #333333;}
+.clearfix:after {clear: both;}
+.clearfix:before,.clearfix:after {content: "";display: table;}
+.clearfix:after {content: "";display: table;}
+.entry-content {word-wrap: break-word;}
+.entry-content {margin-bottom: 18px;}
+.clearfix {}
+.entry-content p {font-family: "Segoe UI","PT Serif",Helvetica,Arial,sans-serif;font-size: 16px;line-height: 28px;}
+p {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 13px;line-height: 18px;margin: 0 0 9px;}
+strong {font-weight: bold;}
+a img.alignnone {margin: 5px 20px 20px 0;}
+img[class*="align"],img[class*="wp-image-"], img[class*="attachment-"] {height: auto;}
+ img[class*="attachment-"] {height: auto;}
+header img,.entry-content img,img,img {max-width: 100%;}
+.alignnone {margin: 5px 20px 20px 0;}
+img {border: 0 none;height: auto;vertical-align: middle;}
+img {max-width: 100%;}
+.aligncenter, div.aligncenter {display: block;margin: 0 auto 20px;}
+ol {list-style: decimal outside none;}
+ul,ol {margin: 0 0 9px 25px;padding: 0;}
+li {line-height: 18px;}
+.entry-meta a:hover {color: #333333;}
+ article.page {margin-bottom: 72px;}
+ .clear {clear: both;}
+ h6 {font-weight: bold;margin: 0;text-rendering: optimizelegibility;}

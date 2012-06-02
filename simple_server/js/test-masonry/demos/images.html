@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  
+  <title>Images &middot; jQuery Masonry</title>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <link rel="stylesheet" href="../css/style.css" />
+  
+  
+  <!-- scripts at bottom of page -->
+
+</head>
+<body class="demos ">
+  
+  <nav id="site-nav">
+    <h1><a href="../index.html">jQuery Masonry</a></h1>
+    
+    <h2>Docs</h2>
+    
+    <ul class="docs-list">
+      
+        
+          
+            <li><a href="../docs/intro.html">Introduction</a>
+          
+        
+      
+        
+          
+            <li><a href="../docs/options.html">Options</a>
+          
+        
+      
+        
+          
+            <li><a href="../docs/methods.html">Methods</a>
+          
+        
+      
+        
+          
+            <li><a href="../docs/animating.html">Animating</a>
+          
+        
+      
+        
+          
+            <li><a href="../docs/help.html">Help</a>
+          
+        
+      
+    </ul>
+
+    <h2>Demos</h2>
+    
+    <ul class="demos-list">
+      
+        
+          
+            <li><a href="../demos/basic-single-column.html">Basic single-column</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/basic-multi-column.html">Basic multi-column</a>
+          
+        
+      
+        
+        <li class="current"><a href="#content">Images</a></li>
+        
+      
+        
+          
+            <li><a href="../demos/tumblelog.html">Tumblelog example</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/animating-jquery.html">Animating with jQuery</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/animating-css-transitions.html">Animating with CSS Transitions</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/animating-modernizr.html">Animating with Modernizr</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/adding-items.html">Adding items</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/infinite-scroll.html">Infinite Scroll</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/gutters.html">Gutters</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/right-to-left.html">Right-to-left</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/centered.html">Centered</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/fluid.html">Fluid</a>
+          
+        
+      
+    </ul>
+    
+  </nav> <!-- #site-nav -->
+  
+  <section id="content">
+    
+    
+      <h1>Images</h1>
+    
+    
+    <section id="copy">
+  <p>Masonry is triggered after all images are loaded with the imagesLoaded plugin</a>. </p>
+  
+<div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">$container</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#container&#39;</span><span class="p">);</span>
+
+<span class="nx">$container</span><span class="p">.</span><span class="nx">imagesLoaded</span><span class="p">(</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">$container</span><span class="p">.</span><span class="nx">masonry</span><span class="p">({</span>
+    <span class="nx">itemSelector</span> <span class="o">:</span> <span class="s1">&#39;.box&#39;</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre>
+</div>
+</section>
+
+<div id="container" class="clearfix">
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013039951/" title="Stanley by Dave DeSandro, on Flickr"><img src="http://farm5.static.flickr.com/4113/5013039951_3a47ccd509.jpg" alt="Stanley" /></a>
+    </div>
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013039885/" title="Officer by Dave DeSandro, on Flickr"><img src="http://farm5.static.flickr.com/4131/5013039885_0d16ac87bc.jpg" alt="Officer" /></a>
+    </div>
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013039583/" title="Tony by Dave DeSandro, on Flickr"><img src="http://farm5.static.flickr.com/4086/5013039583_26717f6e89.jpg" alt="Tony" /></a>
+    </div>
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013646070/" title="Kendra by Dave DeSandro, on Flickr"><img src="http://farm5.static.flickr.com/4146/5013646070_f1f44b1939.jpg" alt="Kendra" /></a>
+    </div>
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013039541/" title="Giraffe by Dave DeSandro, on Flickr"><img src="http://farm5.static.flickr.com/4144/5013039541_17f2579e33.jpg" alt="Giraffe" /></a>
+    </div>
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013039741/" title="Gavin by Dave DeSandro, on Flickr"><img src="http://farm5.static.flickr.com/4153/5013039741_d860fb640b.jpg" alt="Gavin" /></a>
+    </div>
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013039697/" title="Anita by Dave DeSandro, on Flickr"><img src="http://farm5.static.flickr.com/4113/5013039697_a15e41fcd8.jpg" alt="Anita" /></a>
+    </div>
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013646314/" title="Take My Portrait by Dave DeSandro, on Flickr"><img src="http://farm5.static.flickr.com/4124/5013646314_c7eaf84918.jpg"   alt="Take My Portrait" /></a>
+    </div>
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013040075/" title="Wonder by Dave DeSandro, on Flickr"><img src="http://farm5.static.flickr.com/4089/5013040075_bac12ff74e.jpg" alt="Wonder" /></a>
+    </div>
+  
+</div> <!-- #container -->
+
+<nav id="page_nav">
+  <a href="../pages/2.html"></a>
+</nav>
+
+<script src="../js/jquery-1.6.2.min.js"></script>
+<script src="../jquery.masonry.min.js"></script>
+<script>
+  $(function(){
+
+    var $container = $('#container');
+  
+    $container.imagesLoaded( function(){
+      $container.masonry({
+        itemSelector : '.box'
+      });
+    });
+  
+  });
+</script>
+    
+    <footer id="site-footer">
+      jQuery Masonry by <a href="http://desandro.com">David DeSandro</a>
+    </footer>
+    
+  </section> <!-- #content -->
+
+</body>
+</html>

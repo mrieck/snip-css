@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  
+  <title>Options &middot; jQuery Masonry</title>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <link rel="stylesheet" href="../css/style.css" />
+  
+  
+  <!-- scripts at bottom of page -->
+
+</head>
+<body class="docs options">
+  
+  <nav id="site-nav">
+    <h1><a href="../index.html">jQuery Masonry</a></h1>
+    
+    <h2>Docs</h2>
+    
+    <ul class="docs-list">
+      
+        
+          
+            <li><a href="../docs/intro.html">Introduction</a>
+          
+        
+      
+        
+        <li class="current"><a href="#content">Options</a>
+          <ul class="toc">
+            
+            <li><a href="#animationoptions">animationOptions</a></li>
+            
+            <li><a href="#columnwidth">columnWidth</a></li>
+            
+            <li><a href="#gutterwidth">gutterWidth</a></li>
+            
+            <li><a href="#isanimated">isAnimated</a></li>
+            
+            <li><a href="#isfitwidth">isFitWidth</a></li>
+            
+            <li><a href="#isresizable">isResizable</a></li>
+            
+            <li><a href="#isrtl">isRTL</a></li>
+            
+            <li><a href="#itemselector">itemSelector</a></li>
+            
+          </ul>
+        </li>
+        
+      
+        
+          
+            <li><a href="../docs/methods.html">Methods</a>
+          
+        
+      
+        
+          
+            <li><a href="../docs/animating.html">Animating</a>
+          
+        
+      
+        
+          
+            <li><a href="../docs/help.html">Help</a>
+          
+        
+      
+    </ul>
+
+    <h2>Demos</h2>
+    
+    <ul class="demos-list">
+      
+        
+          
+            <li><a href="../demos/basic-single-column.html">Basic single-column</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/basic-multi-column.html">Basic multi-column</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/images.html">Images</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/tumblelog.html">Tumblelog example</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/animating-jquery.html">Animating with jQuery</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/animating-css-transitions.html">Animating with CSS Transitions</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/animating-modernizr.html">Animating with Modernizr</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/adding-items.html">Adding items</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/infinite-scroll.html">Infinite Scroll</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/gutters.html">Gutters</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/right-to-left.html">Right-to-left</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/centered.html">Centered</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/fluid.html">Fluid</a>
+          
+        
+      
+    </ul>
+    
+  </nav> <!-- #site-nav -->
+  
+  <section id="content">
+    
+    
+      <h1>Options</h1>
+    
+    
+    <dl class='header clearfix'>
+  <dt><code>option</code></dt>
+  <dd class='option-type'>Type</dd>
+  <dd class='default'>Default</dd>
+</dl>
+<h2 id='animationoptions'>animationOptions</h2>
+<dl class='clearfix'>
+  <dt><code>animationOptions</code></dt>
+  <dd class='option-type'>Object</dd>
+  <dd class='default'><code>{ queue: <span class='kc'>false</span>, duration: <span class='mi'>500</span> }</code></dd>
+</dl>
+<p>Options used for jQuery animation. See the <a href='http://api.jquery.com/animate/#animate-properties-options'>jQuery API for animate options</a> for details. More details in <a href='animating.html'>Animating</a>.</p>
+
+<h2 id='columnwidth'>columnWidth</h2>
+<dl class='clearfix'>
+  <dt><code>columnWidth</code></dt>
+  <dd class='option-type'>Integer</dd>
+</dl>
+<p>Width in pixels of 1 column of your grid. If no columnWidth is specified, Masonry uses the width of the first item element.</p>
+
+<p><strong>Recommended</strong> if your layout has item elements that have multiple-column widths.</p>
+
+<h2 id='gutterwidth'>gutterWidth</h2>
+<dl class='clearfix'>
+  <dt><code>gutterWidth</code></dt>
+  <dd class='option-type'>Integer</dd>
+  <dd class='default'><code><span class='mi'>0</span></code></dd>
+</dl>
+<p>Adds additional spacing between columns.</p>
+
+<p><a href='../demos/gutters.html'>See Demo: Gutters</a>.</p>
+
+<h2 id='isanimated'>isAnimated</h2>
+<dl class='clearfix'>
+  <dt><code>isAnimated</code></dt>
+  <dd class='option-type'>Boolean</dd>
+  <dd class='default'><code><span class='kc'>false</span></code></dd>
+</dl>
+<p>Enables jQuery animation on layout changes. <a href='animating.html'>See Docs: Animating</a>. More details in <a href='animating.html'>Animating</a>.</p>
+
+<h2 id='isfitwidth'>isFitWidth</h2>
+<dl class='clearfix'>
+  <dt><code>isFitWidth</code></dt>
+  <dd class='option-type'>Boolean</dd>
+  <dd class='default'><code><span class='kc'>false</span></code></dd>
+</dl>
+<p>If enabled, Masonry will size the width of the container to the nearest column. When enabled, Masonry will measure the width of the container&#8217;s parent element, not the width of the container. This option is ideal for centering Masonry layouts.</p>
+
+<p><a href='../demos/centered.html'>See Demo: Centered</a>.</p>
+
+<h2 id='isresizable'>isResizable</h2>
+<dl class='clearfix'>
+  <dt><code>isResizable</code></dt>
+  <dd class='option-type'>Boolean</dd>
+  <dd class='default'><code><span class='kc'>true</span></code></dd>
+</dl>
+<p>Triggers layout logic when browser window is resized.</p>
+
+<h2 id='isrtl'>isRTL</h2>
+<dl class='clearfix'>
+  <dt><code>isRTL</code></dt>
+  <dd class='option-type'>Boolean</dd>
+  <dd class='default'><code><span class='kc'>false</span></code></dd>
+</dl>
+<p>Enables right-to-left layout for languages like Hebrew and Arabic.</p>
+
+<p><a href='../demos/right-to-left.html'>See Demo: Right-to-left</a>.</p>
+
+<h2 id='itemselector'>itemSelector</h2>
+<dl class='clearfix'>
+  <dt><code>itemSelector</code></dt>
+  <dd class='option-type'>String</dd>
+</dl>
+<p>Filters item elements to selector. If not set, Masonry defaults to using the child elements of the container.</p>
+
+<p><strong>Recommended</strong> to avoid Masonry using any other hidden elements in its layout logic.</p>
+<div class='highlight'><pre><code class='javascript'><span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;#container&#39;</span><span class='p'>).</span><span class='nx'>masonry</span><span class='p'>({</span> <span class='nx'>itemSelector</span><span class='o'>:</span> <span class='s1'>&#39;.box&#39;</span> <span class='p'>});</span>
+</code></pre>
+</div>
+    
+    <footer id="site-footer">
+      jQuery Masonry by <a href="http://desandro.com">David DeSandro</a>
+    </footer>
+    
+  </section> <!-- #content -->
+
+</body>
+</html>

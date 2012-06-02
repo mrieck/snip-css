@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  
+  <title>Methods &middot; jQuery Masonry</title>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <link rel="stylesheet" href="../css/style.css" />
+  
+  
+  <!-- scripts at bottom of page -->
+
+</head>
+<body class="docs ">
+  
+  <nav id="site-nav">
+    <h1><a href="../index.html">jQuery Masonry</a></h1>
+    
+    <h2>Docs</h2>
+    
+    <ul class="docs-list">
+      
+        
+          
+            <li><a href="../docs/intro.html">Introduction</a>
+          
+        
+      
+        
+          
+            <li><a href="../docs/options.html">Options</a>
+          
+        
+      
+        
+        <li class="current"><a href="#content">Methods</a>
+          <ul class="toc">
+            
+            <li><a href="#appended">appended</a></li>
+            
+            <li><a href="#destroy">destroy</a></li>
+            
+            <li><a href="#layout">layout</a></li>
+            
+            <li><a href="#option">option</a></li>
+            
+            <li><a href="#reloaditems">reloadItems</a></li>
+            
+            <li><a href="#reload">reload</a></li>
+            
+            <li><a href="#remove">remove</a></li>
+            
+          </ul>
+        </li>
+        
+      
+        
+          
+            <li><a href="../docs/animating.html">Animating</a>
+          
+        
+      
+        
+          
+            <li><a href="../docs/help.html">Help</a>
+          
+        
+      
+    </ul>
+
+    <h2>Demos</h2>
+    
+    <ul class="demos-list">
+      
+        
+          
+            <li><a href="../demos/basic-single-column.html">Basic single-column</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/basic-multi-column.html">Basic multi-column</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/images.html">Images</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/tumblelog.html">Tumblelog example</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/animating-jquery.html">Animating with jQuery</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/animating-css-transitions.html">Animating with CSS Transitions</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/animating-modernizr.html">Animating with Modernizr</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/adding-items.html">Adding items</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/infinite-scroll.html">Infinite Scroll</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/gutters.html">Gutters</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/right-to-left.html">Right-to-left</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/centered.html">Centered</a>
+          
+        
+      
+        
+          
+            <li><a href="../demos/fluid.html">Fluid</a>
+          
+        
+      
+    </ul>
+    
+  </nav> <!-- #site-nav -->
+  
+  <section id="content">
+    
+    
+      <h1>Methods</h1>
+    
+    
+    <p>Masonry offers several methods to extend functionality. Masonry&#8217;s methods follow the jQuery UI pattern.</p>
+<div class='highlight'><pre><code class='javascript'><span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;#container&#39;</span><span class='p'>).</span><span class='nx'>masonry</span><span class='p'>(</span> <span class='s1'>&#39;methodName&#39;</span><span class='p'>,</span> <span class='p'>[</span><span class='nx'>optionalParameters</span><span class='p'>]</span> <span class='p'>)</span>
+</code></pre>
+</div>
+<h2 id='appended'>appended</h2>
+<div class='highlight'><pre><code class='javascript'><span class='p'>.</span><span class='nx'>masonry</span><span class='p'>(</span> <span class='s1'>&#39;appended&#39;</span><span class='p'>,</span> <span class='nx'>$content</span><span class='p'>,</span> <span class='nx'>isAnimatedFromBottom</span> <span class='p'>)</span>
+</code></pre>
+</div>
+<p>Triggers <code>layout</code> on item elements that have been appended to the container.</p>
+
+<p><a href='../demos/adding-items.html'>See Demo: Adding items</a>.</p>
+<div class='highlight'><pre><code class='javascript'><span class='kd'>var</span> <span class='nx'>$boxes</span> <span class='o'>=</span> <span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;&lt;div class=&quot;box&quot;/&gt;&lt;div class=&quot;box&quot;/&gt;&lt;div class=&quot;box&quot;/&gt;&#39;</span><span class='p'>);</span>
+<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;#container&#39;</span><span class='p'>).</span><span class='nx'>append</span><span class='p'>(</span> <span class='nx'>$boxes</span> <span class='p'>).</span><span class='nx'>masonry</span><span class='p'>(</span> <span class='s1'>&#39;appended&#39;</span><span class='p'>,</span> <span class='nx'>$boxes</span> <span class='p'>);</span>
+</code></pre>
+</div>
+<p>Setting the <code>isAnimatedFromBottom</code> argument to <code><span class='kc'>true</span></code> will enable the newly appended items to be animated from the bottom, if animation is enabled.</p>
+<div class='highlight'><pre><code class='javascript'><span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;#container&#39;</span><span class='p'>).</span><span class='nx'>append</span><span class='p'>(</span> <span class='nx'>$boxes</span> <span class='p'>).</span><span class='nx'>masonry</span><span class='p'>(</span> <span class='s1'>&#39;appended&#39;</span><span class='p'>,</span> <span class='nx'>$boxes</span><span class='p'>,</span> <span class='kc'>true</span> <span class='p'>);</span>
+</code></pre>
+</div>
+<p>The <code>appended</code> method is ideal to use Masonry with Infinite Scroll, in its callback.</p>
+
+<p><a href='../demos/infinite-scroll.html'>See Demo: Infinite Scroll</a>.</p>
+<div class='highlight'><pre><code class='javascript'><span class='kd'>var</span> <span class='nx'>$container</span> <span class='o'>=</span> <span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;#container&#39;</span><span class='p'>);</span>
+<span class='nx'>$container</span><span class='p'>.</span><span class='nx'>infinitescroll</span><span class='p'>({</span>
+    <span class='c1'>// infinite scroll options...</span>
+  <span class='p'>},</span>
+  <span class='c1'>// trigger Masonry as a callback</span>
+  <span class='kd'>function</span><span class='p'>(</span> <span class='nx'>newElements</span> <span class='p'>)</span> <span class='p'>{</span>
+    <span class='kd'>var</span> <span class='nx'>$newElems</span> <span class='o'>=</span> <span class='nx'>$</span><span class='p'>(</span> <span class='nx'>newElements</span> <span class='p'>);</span>
+    <span class='nx'>$container</span><span class='p'>.</span><span class='nx'>masonry</span><span class='p'>(</span> <span class='s1'>&#39;appended&#39;</span><span class='p'>,</span> <span class='nx'>$newElems</span> <span class='p'>);</span>
+  <span class='p'>}</span>
+<span class='p'>);</span>
+</code></pre>
+</div>
+<h2 id='destroy'>destroy</h2>
+<div class='highlight'><pre><code class='javascript'><span class='p'>.</span><span class='nx'>masonry</span><span class='p'>(</span> <span class='s1'>&#39;destroy&#39;</span> <span class='p'>)</span>
+</code></pre>
+</div>
+<p>Removes Masonry functionality completely. Returns element back to pre-initialized state.</p>
+
+<h2 id='layout'>layout</h2>
+<div class='highlight'><pre><code class='javascript'><span class='p'>.</span><span class='nx'>masonry</span><span class='p'>(</span> <span class='s1'>&#39;layout&#39;</span><span class='p'>,</span> <span class='nx'>$items</span><span class='p'>,</span> <span class='nx'>callback</span> <span class='p'>)</span>
+</code></pre>
+</div>
+<p>Positions specified item elements in layout.</p>
+
+<p><code>layout</code> will only position specified elements, and those elements will be positioned at the end of layout. Whereas <code>.masonry()</code> will position all items in the Masonry instance.</p>
+
+<h2 id='option'>option</h2>
+<div class='highlight'><pre><code class='javascript'><span class='p'>.</span><span class='nx'>masonry</span><span class='p'>(</span> <span class='s1'>&#39;option&#39;</span><span class='p'>,</span> <span class='nx'>options</span> <span class='p'>)</span>
+</code></pre>
+</div>
+<p>Sets options for plugin instance. Unlike passing options through <code>.masonry()</code>, using the <code>option</code> method will not trigger layout.</p>
+<div class='highlight'><pre><code class='javascript'><span class='c1'>// set multiple options</span>
+<span class='p'>.</span><span class='nx'>masonry</span><span class='p'>(</span> <span class='s1'>&#39;option&#39;</span><span class='p'>,</span> <span class='p'>{</span> <span class='nx'>columnWidth</span><span class='o'>:</span> <span class='mi'>120</span><span class='p'>,</span> <span class='nx'>isAnimated</span><span class='o'>:</span> <span class='kc'>false</span> <span class='p'>}</span> <span class='p'>)</span>
+</code></pre>
+</div>
+<h2 id='reloaditems'>reloadItems</h2>
+<div class='highlight'><pre><code class='javascript'><span class='p'>.</span><span class='nx'>masonry</span><span class='p'>(</span> <span class='s1'>&#39;reloadItems&#39;</span> <span class='p'>)</span>
+</code></pre>
+</div>
+<p>Re-collects all item elements in their current order in the DOM.</p>
+
+<h2 id='reload'>reload</h2>
+<div class='highlight'><pre><code class='javascript'><span class='p'>.</span><span class='nx'>masonry</span><span class='p'>(</span> <span class='s1'>&#39;reload&#39;</span> <span class='p'>)</span>
+</code></pre>
+</div>
+<p>Convenience method for triggering <code>reloadItems</code> then <code>.masonry()</code>. Useful for prepending or inserting items.</p>
+
+<p><a href='../demos/adding-items.html'>See Demo: Adding items</a>.</p>
+<div class='highlight'><pre><code class='javascript'><span class='kd'>var</span> <span class='nx'>$boxes</span> <span class='o'>=</span> <span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;&lt;div class=&quot;box&quot;/&gt;&lt;div class=&quot;box&quot;/&gt;&lt;div class=&quot;box&quot;/&gt;&#39;</span><span class='p'>);</span>
+<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;#container&#39;</span><span class='p'>).</span><span class='nx'>prepend</span><span class='p'>(</span> <span class='nx'>$boxes</span> <span class='p'>).</span><span class='nx'>masonry</span><span class='p'>(</span> <span class='s1'>&#39;reload&#39;</span> <span class='p'>);</span>
+</code></pre>
+</div>
+<h2 id='remove'>remove</h2>
+<div class='highlight'><pre><code class='javascript'><span class='p'>.</span><span class='nx'>masonry</span><span class='p'>(</span> <span class='s1'>&#39;remove&#39;</span><span class='p'>,</span> <span class='nx'>$items</span> <span class='p'>)</span>
+</code></pre>
+</div>
+<p>Removes specified item elements from Masonry instance and the DOM.</p>
+    
+    <footer id="site-footer">
+      jQuery Masonry by <a href="http://desandro.com">David DeSandro</a>
+    </footer>
+    
+  </section> <!-- #content -->
+
+</body>
+</html>
