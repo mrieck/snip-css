@@ -1,8 +1,6 @@
-SnipCSS
-=========
+#SnipCSS
 
-DISCLAIMER:
-==================================================================
+##DISCLAIMER:
 The creator of this software disclaims any responsibility for harm resulting from using SnipCSS or 
 any software or content downloaded using SnipCSS, whether or not the author approved such 
 software or content. The author expressly disclaims all warranties and conditions, express or 
@@ -11,12 +9,12 @@ particular purpose, and noninfringement, and any warranties and conditions arisi
 of dealing or usage of the SnipCSS software or any software or content you download using the SnipCSS
 extension and server. No advice or information, whether oral or written, obtained from the author 
 or elsewhere will create any warranty or condition not expressly stated in this agreement. 
-==================================================================
 
-What is SnipCSS?
+####What is SnipCSS?
 
-#### SnipCSS is a Firebug/Firefox extension that "snips" a portion of a webpage.  It takes the HTML snip, tries
-to find all CSS selectors applied to that portion of HTML, and gets a list of images used in the
+#### SnipCSS is a Firebug/Firefox extension that "snips" a portion of a webpage.  
+
+It takes the HTML snip, tries to find all CSS selectors applied to that portion of HTML, and gets a list of images used in the
 snip (both HTML images and CSS images).
 
 Firebug must first be installed for the extension to work.  
@@ -24,8 +22,8 @@ Firebug must first be installed for the extension to work.
 To snip a portion of a webpage, install the extension, then right-click an element in the 
 inspector panel... there should be a "SnipCSS" option in the context menu.  
 
-SnipCSS simple_server
-===============
+##SnipCSS simple_server
+
 To download the html/css/images of a snip, you need to have a server running to receive the data.
 
 When the SnipCSS window pops up in the extension, you will need to specify the URL that will receive the code.
@@ -58,8 +56,7 @@ You need PHP CURL installed to download images.
 After the images download (could take 5-30 seconds)... directions are displayed on how to 
 copy the Snip into a webpage you are developing.
 
-SnipCSS codeigniter_server (not completed)
-===============
+##SnipCSS codeigniter_server (not completed)
 The CodeIgniter server does everything of the simple server, except it also has a templating engine
 built specifically for filling SnipCSS imported code.  The templating engine hooks up CodeIgniter models
 with JQuery selectors to insert records into the Snip HTML.  At first I tried using a normal templating
