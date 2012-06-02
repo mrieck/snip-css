@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE window>
+<window xmlns= "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    width="900" height="700" onload="onLoadUI();" title="CSS Snip">
+<script src="chrome://firefoxsnipcss/content/lib/jquery-1.7.1.min.js" />
+<script src="chrome://firefoxsnipcss/content/lib/json2.js"/>
+<script src="chrome://firefoxsnipcss/content/snip_window.js" /> 
+
+<vbox>
+<hbox>
+	<hbox>
+		<vbox>
+			<label value="Server Location :"/>
+			<textbox width="380" id="server_loc" multiline="false" />
+		</vbox>
+		<separator width="40" />
+		<vbox>
+			<label value="Prepend root elem with unique ID: "/>
+			<radiogroup>
+				<radio id="prepend_yes" label="Yes" />
+				<radio id="prepend_no" label="No" selected="true"/>	
+			</radiogroup>
+		</vbox>
+	</hbox>
+	
+</hbox>
+
+<groupbox>
+<caption label="------SNIP THIS CODE-------"/>
+    <hbox>
+        <vbox>                   
+            <textbox width="480" id="text_shtml" multiline="true" rows="28" />
+        </vbox>
+        <separator width="15" />
+		<vbox>
+			<vbox>               
+				<label value="Stolen CSS:"/>
+				<textbox width="350" id="text_scss" multiline="true" rows="10" />    
+			</vbox>
+			<separator width="20" />		
+			<vbox>
+				<label value="Embedded HTML Images:"/>
+				 <listbox width="350" rows="5" id="html_image_list">
+				 </listbox>
+			</vbox>
+			<separator width="20" />		
+			<vbox>        
+				<label value="CSS Images: "/>
+				 <listbox width="350" rows="5" id="css_image_list">
+				 </listbox>
+			</vbox>         
+		</vbox>  
+		
+    </hbox>  
+
+    <spacer flex="1"/>
+
+</groupbox>
+    <hbox width="600" align="center">
+        <button id="save_code" label="Save Code Snip" value="" oncommand="saveSnip();"/>
+    </hbox>
+</vbox>
+</window>

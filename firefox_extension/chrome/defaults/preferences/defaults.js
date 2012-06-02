@@ -1,0 +1,1 @@
+pref('extensions.firefoxsnipcss.serverurl', 'http://localhost/github/SnipCSS/simple_server/remote_snipcode.php');

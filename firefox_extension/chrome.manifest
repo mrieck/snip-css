@@ -1,0 +1,3 @@
+content firefoxsnipcss chrome/content/firefoxsnipcss/ xpcnativewrappers=no
+overlay chrome://firebug/content/firebugOverlay.xul         chrome://firefoxsnipcss/content/firefoxsnipcss.xul
+

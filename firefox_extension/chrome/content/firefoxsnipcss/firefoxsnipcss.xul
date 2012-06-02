@@ -1,0 +1,9 @@
+<?xml version="1.0"?> 
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"> 
+    <script type="application/x-javascript" src="chrome://firefoxsnipcss/content/lib/jquery-1.7.1.min.js" />
+    <script type="application/x-javascript" src="chrome://firefoxsnipcss/content/lib/json2.js"/>
+    <script type="application/x-javascript" src="chrome://firefoxsnipcss/content/lib/resolve_uri.js"/>
+    <script type="application/x-javascript" src="chrome://firefoxsnipcss/content/firebug_interface.js" /> 
+    <script type="application/x-javascript" src="chrome://firefoxsnipcss/content/snipcss.js" /> 
+</overlay>

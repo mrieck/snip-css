@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>helloworld@janodvarko.cz</em:id>
+    <em:version>0.0.1</em:version>
+   
+    <!-- Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>3.5</em:minVersion>
+        <em:maxVersion>12.0.0.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <em:name>Firebug SnipCSS</em:name>
+    <em:description>Extension that adds option to Snip CSS of any element right-clicked in context menu</em:description>
+    <em:creator>Mark Fuckerberg</em:creator>
+    <em:homepageURL>http://www.snipcss.com</em:homepageURL>
+  </Description>      
+</RDF>
