@@ -146,12 +146,19 @@ CSSSnip = function ()
 			//  var selText = x["rule"].selectorText;
 			//  JQUERY doesn't like the  : visited  a : hover
 			var selText = ruleArr[i].rule["selectorText"];
-			Firebug.Console.log("selText: " + selText);
+			Firebug.Console.log("selText222: " + selText);
 			
 			if(selText === undefined || selText.length <= 0)
 			{
 				continue;
 			}
+			
+			if(selText.indexOf(":-moz-any") >= 0)
+			{
+				Firebug.Console.log("SKIPPING - :-moz-any not copied");
+				continue;				
+			}
+		
 					
 			var selArr = selText.split(",");
 			var modifiedArr = new Array();

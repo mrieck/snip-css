@@ -1,0 +1,96 @@
+/*CSS for id: 86*/
+body {background: url("./cimages/main-bg.png") repeat scroll 0 0 #F7F7F7;}
+body {background: none repeat-x scroll 0 0 #F7F7F7;font-size: 1em;line-height: 1.4;margin: 0;}
+#dimTheLights {background: none repeat scroll 0 0 #000000;display: none;height: 1500px;opacity: 0.8;position: absolute;width: 100%;z-index: 99;}
+#wrapper {margin: 0 auto;width: 950px;}
+#header {background: url("./cimages/divider.png") no-repeat scroll 46px 48px transparent;height: 58px;margin: 0 auto;width: 100%;}
+.twitter-share-button {width: 100px;}
+a {color: #A9A9A9;text-decoration: none;}
+img {border: 0 none;vertical-align: middle;}
+#nav {float: right;height: 35px;margin-top: 11px;position: relative;width: 440px;}
+#nav .active {background: url("./cimages/nav-arrow-orange.png") no-repeat scroll 50% 20px transparent;color: #535353;}
+#nav a {color: #A9A9A9;padding: 0 15px 20px;}
+#product-cta {height: 478px;padding-top: 40px;width: 100%;}
+.floatLeft {float: left;}
+#version-release-wrapper {left: 138px;position: relative;top: -95px;width: 150px;}
+#current-version {background-color: #494949;border-radius: 5px 5px 5px 5px;color: #FFFFFF;font-size: 13px;font-weight: normal;padding: 5px 10px 4px;position: relative;top: 12px;}
+#rf-release-notes {color: #DD8929;font-size: 14px;margin: 1px 0 0 4px;position: relative;top: 10px;}
+#product-tag {font-size: 20px;font-weight: normal;position: relative;top: -36px;width: 358px;}
+b,strong {color: #383838;font-weight: bold;}
+strong {color: #383838;font-weight: bold;}
+#product-desc {font-size: 16px;width: 320px;}
+#download-area {margin-top: 18px;}
+#download-notes {font-size: 12px;margin-top: 18px;width: 320px;}
+#rf-screenshot-wrapper {background: url("./cimages/mac-iphone-main.png") no-repeat scroll 0 0 transparent;float: right;height: 441px;position: relative;width: 592px;z-index: 30;}
+#rf-mac-screenshot {background: none repeat scroll 0 0 #000000;height: 229px;left: 431px;position: relative;top: 33px;width: 394px;z-index: 1;}
+#rf-mac-screenshot img {visibility: hidden;}
+#rf-mac-screenshot .selected {left: 30px;position: absolute;top: 0;visibility: visible;z-index: 1;}
+#rf-iphone-screenshot {background: none repeat scroll 0 0 #000000;height: 192px;left: 755px;position: relative;top: -129px;width: 127px;z-index: 2;}
+#rf-iphone-screenshot img {visibility: hidden;}
+#rf-iphone-screenshot .selected {left: 0;position: absolute;top: 0;visibility: visible;z-index: 3;}
+#feature4x4 {background: url("./cimages/divider.png") no-repeat scroll 46px 218px transparent;height: 216px;padding-top: 38px;width: 100%;}
+.featureCell {font-size: 13px;padding: 0 10px;width: 217px;}
+.featureGliph {height: 60px;margin: 0 auto;text-align: center;}
+#reviews {background: url("./cimages/divider.png") no-repeat scroll 46px 95px transparent;height: 96px;width: 100%;}
+.sectionLabel {color: #BDBDBD;font-size: 13px;position: relative;top: -14px;}
+.center {margin: 0 auto;text-align: center;}
+#reviews img {padding: 0 19px;}
+#misc-product-details {background: url("./cimages/divider.png") no-repeat scroll 46px 200px transparent;height: 260px;margin-top: 45px;}
+.misc-prod-dtl-cell {float: left;padding-right: 27px;width: 210px;}
+form {margin: 0;}
+input:valid,textarea:valid {}
+input[type="text"] {background: url("./cimages/custom-textfield.png") no-repeat scroll 0 0 transparent;border: medium none;font-size: 13px;height: 36px;margin: 3px 0;padding: 3px 10px;width: 206px;}
+:-moz-placeholder {color: #A2A2A2;}
+button,input {line-height: normal;}
+html, button,input, select, textarea {color: #707070;font-family: "Myriad Pro","Lucida Grande","Arial";}
+textarea:valid {}
+input {line-height: normal;}
+ textarea {color: #707070;font-family: "Myriad Pro","Lucida Grande","Arial";}
+#nospam {font-size: 11px;padding: 8px 2px;}
+#submit-signup {background: url("./cimages/signup-btn.png") no-repeat scroll 0 0 transparent;border: medium none;height: 34px;width: 75px;}
+button,input[type="button"], input[type="reset"], input[type="submit"] {cursor: pointer;}
+.testimonial {color: #7B7B7B;font-style: italic;}
+.testimonial-name {color: #888888;padding-top: 14px;}
+#help {width: 180px;}
+ul, ol {margin: 0 0;padding: 0;}
+li {color: #319823;font-size: 14px;list-style-image: url("./cimages/pixel-arrow.png");padding-bottom: 14px;padding-top: 3px;}
+#screenshots {width: 234px;}
+#screenshots img {padding: 4px;}
+#footer {display: block;margin-top: 30px;}
+#footer a {font-size: 11px;padding: 0 15px 20px;}
+#legal {color: #888888;font-size: 11px;}
+#copyright {color: #A2A2A2;font-size: 11px;}
+#footer #nav {position: relative;text-align: right;top: -16px;width: 41%;}
+.floatRight {float: right;}
+#cboxOverlay {background: none repeat scroll 0 0 #000000;}
+#cboxOverlay {height: 100%;position: fixed;width: 100%;}
+#colorbox,#cboxOverlay,#cboxWrapper {left: 0;overflow: hidden;position: absolute;top: 0;z-index: 9999;}
+#colorbox {}
+#cboxWrapper {left: 0;overflow: hidden;position: absolute;top: 0;z-index: 9999;}
+#cboxTopLeft {background: url("./cimages/controls.png") no-repeat scroll -101px 0 transparent;height: 21px;width: 21px;}
+#cboxTopCenter {background: url("./cimages/border.png") repeat-x scroll 0 0 transparent;height: 21px;}
+#cboxTopRight {background: url("./cimages/controls.png") no-repeat scroll -130px 0 transparent;height: 21px;width: 21px;}
+#cboxMiddleLeft {background: url("./cimages/controls.png") repeat-y scroll left top transparent;width: 21px;}
+#cboxMiddleLeft,#cboxBottomLeft {clear: left;}
+#cboxContent {background: none repeat scroll 0 0 #FFFFFF;overflow: hidden;}
+#cboxContent {position: relative;}
+#cboxLoadedContent {margin-bottom: 28px;}
+#cboxLoadedContent {overflow: auto;}
+#cboxLoadingOverlay {background: url("./cimages/loading_background.png") no-repeat scroll center center transparent;}
+#cboxLoadingOverlay,#cboxLoadingGraphic {height: 100%;left: 0;position: absolute;top: 0;width: 100%;}
+#cboxLoadingGraphic {background: url("./cimages/loading.gif") no-repeat scroll center center transparent;}
+#cboxLoadingGraphic {height: 100%;left: 0;position: absolute;top: 0;width: 100%;}
+#cboxTitle {bottom: 4px;color: #949494;left: 0;position: absolute;text-align: center;width: 100%;}
+#cboxTitle {margin: 0;}
+#cboxCurrent {bottom: 4px;color: #949494;left: 58px;position: absolute;}
+#cboxNext {background: url("./cimages/controls.png") no-repeat scroll -50px 0 transparent;bottom: 0;height: 25px;left: 27px;position: absolute;text-indent: -9999px;width: 25px;}
+#cboxPrevious,#cboxNext,#cboxClose,#cboxSlideshow {cursor: pointer;}
+#cboxPrevious {background: url("./cimages/controls.png") no-repeat scroll -75px 0 transparent;bottom: 0;height: 25px;left: 0;position: absolute;text-indent: -9999px;width: 25px;}
+#cboxSlideshow {cursor: pointer;}
+#cboxSlideshow {bottom: 4px;color: #0092EF;position: absolute;right: 30px;}
+#cboxClose {background: url("./cimages/controls.png") no-repeat scroll -25px 0 transparent;bottom: 0;height: 25px;position: absolute;right: 0;text-indent: -9999px;width: 25px;}
+#cboxMiddleRight {background: url("./cimages/controls.png") repeat-y scroll right top transparent;width: 21px;}
+#cboxBottomLeft {background: url("./cimages/controls.png") no-repeat scroll -101px -29px transparent;height: 21px;width: 21px;}
+#cboxBottomLeft {clear: left;}
+#cboxBottomCenter {background: url("./cimages/border.png") repeat-x scroll 0 -29px transparent;height: 21px;}
+#cboxBottomRight {background: url("./cimages/controls.png") no-repeat scroll -130px -29px transparent;height: 21px;width: 21px;}

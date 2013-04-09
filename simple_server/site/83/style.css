@@ -1,0 +1,30 @@
+/*CSS for id: 83*/
+.list {border-radius: 3px 3px 3px 3px;box-shadow: 0 0 3px rgba(0, 0, 0, 0.56);float: left;margin-bottom: 50px;width: 720px;}
+html, body,div,span, applet, object, iframe, h1,h2, h3,h4, h5, h6,p, blockquote, pre,a, abbr, acronym, address, big, cite, code, del, dfn, em,img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol,ul,li, fieldset, form,label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {border: 0 none;margin: 0;padding: 0;vertical-align: baseline;}
+.list .top {border-top-left-radius: 3px;border-top-right-radius: 3px;}
+.list .cat {background-image: url("./cimages/cap.png");border-top: 1px solid #5A5954;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;color: #FFFFFF;font-size: 18px;font-weight: bold;height: 32px;padding-left: 20px;padding-top: 8px;text-shadow: 0 -1px 0 black;}
+ video {border: 0 none;margin: 0;padding: 0;vertical-align: baseline;}
+.list .site {background-color: #F9F9F9;border-bottom: 1px solid #E9E4E2;border-bottom-left-radius: 3px;border-bottom-right-radius: 3px;box-shadow: 0 1px 0 #FFFFFF inset;height: 40px;position: relative;}
+.checkbox {cursor: pointer;display: inline;height: 30px;left: 2px;position: absolute;top: 5px;width: 30px;}
+.checkbox .mark {display: inline;}
+.checkbox img {background: url("./cimages/checkbox2.png") no-repeat scroll -2px -2px transparent;height: 16px;margin-left: 8px;margin-top: 7px;width: 16px;}
+.list .site .icon {height: 16px;left: 40px;position: absolute;top: 12px;width: 16px;}
+.list .site h4 {color: #6B6A6A;display: inline-block;font-size: 16px;left: 70px;position: absolute;top: 11px;}
+.list .site button.edit {background: url("./cimages/icon-site-edit.png") no-repeat scroll 11px 3px transparent;border: 2px solid #BEBDBD;border-radius: 20px 20px 20px 20px;color: #9F9D9C;cursor: pointer;display: none;font-size: 13px;font-weight: 500;height: 25px;line-height: 17px;padding-left: 35px;padding-right: 13px;position: absolute;right: 127px;text-align: left;top: 8px;}
+.list .site button.share {background: url("./cimages/icon-site-share.png") no-repeat scroll 9px 4px transparent;border: 2px solid #BEBDBD;border-radius: 20px 20px 20px 20px;color: #9F9D9C;cursor: pointer;display: none;font-size: 13px;font-weight: 500;height: 25px;line-height: 17px;padding-left: 30px;padding-right: 10px;position: absolute;right: 43px;text-align: left;top: 8px;}
+.list .site button.favorite {border: medium none;cursor: pointer;height: 26px;position: absolute;right: 10px;text-indent: -9999px;top: 7px;width: 26px;}
+.list .site .selected {background: url("./cimages/favorite.png") no-repeat scroll center center transparent;}
+.list .panel {background: url("./cimages/panel.png") repeat scroll 0 bottom #181818;box-shadow: 0 1px 3px black inset;display: none;padding: 30px 30px 2px;}
+.list .panel p {margin-bottom: 20px;}
+.list .panel label {color: #FFFFFF;display: inline-block;font-size: 14px;font-weight: 700;margin-right: 10px;text-align: right;text-shadow: 0 1px 1px #151515;width: 42px;}
+.list .panel input[type="text"],.list .panel input[type="password"] {background: url("./cimages/panel-input.png") repeat scroll 0 0 #161514;border-radius: 4px 4px 4px 4px;border-style: none;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px black inset;color: #8C8888;font: 14px "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;margin-right: 30px;outline: medium none;padding: 8px 6px;width: 200px;}
+.list .panel input[type="password"] {background: url("./cimages/panel-input.png") repeat scroll 0 0 #161514;border-radius: 4px 4px 4px 4px;border-style: none;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px black inset;color: #8C8888;font: 14px "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;margin-right: 30px;outline: medium none;padding: 8px 6px;width: 200px;}
+.list .panel .group {width: 255px;}
+.list .panel .url {width: 290px;}
+.list .panel p.creds {border-bottom: 1px solid #3E3B37;border-top: 1px solid #3E3B37;margin-top: 30px;padding-bottom: 20px;padding-top: 20px;}
+.list .panel p.creds label {width: 70px;}
+.list .panel .submit {background-image: -moz-linear-gradient(90deg, #C42E2A 0%, #D63D38 100%);border: medium none;border-radius: 5px 5px 5px 5px;box-shadow: 0 1px 0 #D95A55 inset, 0 1px 2px #050504;color: #FFFFFF;font-size: 14px;font-weight: bold;padding: 10px 25px;text-shadow: 0 1px 2px #5C1210;}
+.list .panel .cancel {color: #FFFFFF;margin-left: 10px;}
+.list .panel .delete {background: url("./cimages/icon-site-delete.png") no-repeat scroll 2px 2px transparent;border-style: none;color: #FEFFFF;cursor: pointer;font: 300 14px "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;letter-spacing: 0;margin-left: 400px;padding-left: 21px;}
+.list .site .unselected {background: url("./cimages/favorite-unselected.png") no-repeat scroll center center transparent;}
+.list .last {border-bottom-left-radius: 3px;border-bottom-right-radius: 3px;}

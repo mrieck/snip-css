@@ -1,0 +1,36 @@
+/*CSS for id: 84*/
+.noSelect {-moz-user-select: none;}
+header {background: -moz-linear-gradient(center top , #666666, #222222) repeat scroll 0 0 transparent;border-bottom: 3px solid #CCCCCC;border-top: 3px solid #222222;margin-bottom: 0;padding: 0 20px;position: fixed;top: 0;width: 100%;z-index: 10000;}
+article, aside, details, figcaption, figure,footer,header, hgroup, menu,nav,section {display: block;}
+html, body,div,span, applet, object,iframe,h1,h2, h3, h4, h5, h6,p, blockquote, pre,a, abbr, acronym, address, big, cite, code, del, dfn, em,img, ins, kbd, q, s, samp, small, strike,strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol,ul,li, fieldset,form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption,footer,header, hgroup, menu,nav, output, ruby,section, summary, time, mark, audio, video,button {border: 0 none;margin: 0;padding: 0;vertical-align: baseline;}
+article, aside, details, figcaption, figure,footer,header, hgroup,nav,section {display: block;}
+button {border: 0 none;margin: 0;padding: 0;vertical-align: baseline;}
+.logo-header {padding: 8px 0 12px;}
+a {color: #0088CC;text-decoration: none;}
+.logo-header img {height: 60px;}
+img {border: 0 none;max-width: 100%;vertical-align: middle;}
+.phoneContainer {border-bottom: 1px solid black;border-left: 1px solid black;border-radius: 0 0 10px 10px;border-right: 1px solid black;font-size: 10pt;padding: 5px;}
+.navContainer {margin: 10px 0 0;position: absolute;width: 905px;}
+.phone {color: #FFFFFF;}
+.blue {color: #3390B9;display: inline;font-weight: 600;}
+.phoneContainer a {color: #3390B9;}
+.navContainer a,a {color: #999999;margin-right: 10px;text-decoration: none;}
+section {display: block;}
+.navContainer ul {list-style: none outside none;}
+ol,ul {list-style: none outside none;}
+ul {list-style: disc outside none;}
+ul, ol {margin: 0 0 9px 25px;padding: 0;}
+.navContainer ul li {float: left;padding: 9px 10px 11px;}
+li {line-height: 18px;}
+a {color: #999999;margin-right: 10px;text-decoration: none;}
+.linearTransition {-moz-transition: all 0.2s linear 0s;}
+.pricingOpen {cursor: pointer;}
+.right {float: right;margin-right: 30px;}
+ul {list-style: none outside none;}
+ ol {margin: 0 0 9px 25px;padding: 0;}
+.btn:first-child {}
+.btn-success {background-color: #5BB75B;background-image: -moz-linear-gradient(center top , #62C462, #51A351);background-repeat: repeat-x;border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);}
+.btn {border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);}
+.btn-primary,.btn-primary:hover, .btn-warning,.btn-warning:hover, .btn-danger,.btn-danger:hover,.btn-success,.btn-success:hover, .btn-info,.btn-info:hover, .btn-inverse,.btn-inverse:hover {color: #FFFFFF;text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);}
+.btn-large {border-radius: 5px 5px 5px 5px;font-size: 15px;line-height: normal;padding: 9px 14px;}
+.btn {-moz-border-bottom-colors: none;-moz-border-image: none;-moz-border-left-colors: none;-moz-border-right-colors: none;-moz-border-top-colors: none;background-color: #F5F5F5;background-image: -moz-linear-gradient(center top , #FFFFFF, #E6E6E6);background-repeat: repeat-x;border-color: #E6E6E6 #E6E6E6 #B3B3B3;border-radius: 4px 4px 4px 4px;border-style: solid;border-width: 1px;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);color: #333333;cursor: pointer;display: inline-block;font-size: 13px;line-height: 18px;margin-bottom: 0;padding: 4px 10px;text-align: center;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);vertical-align: middle;}

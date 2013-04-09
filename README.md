@@ -19,8 +19,8 @@ snip (both HTML images and CSS images).
 
 Firebug must first be installed for the extension to work.  
 
-To snip a portion of a webpage, install the extension, then right-click an element in the 
-inspector panel... there should be a "SnipCSS" option in the context menu.  
+To snip a portion of a webpage, install the extension, then *right-click an element in the Firebug 
+inspector panel*... there should be a "SnipCSS" option in the context menu.  
 
 ##SnipCSS simple_server
 
@@ -51,7 +51,7 @@ tables will be created on first loading of index.php.
 
 When a snip is selected from the dropdown menu, all images will be downloaded from the server.
 
-You need PHP CURL installed to download images.  
+You need PHP CURL installed to download images.  The site folder will also need write permissions.
 
 After the images download (could take 5-30 seconds)... directions are displayed on how to 
 copy the Snip into a webpage you are developing.
@@ -59,11 +59,5 @@ copy the Snip into a webpage you are developing.
 ##SnipCSS codeigniter_server (not completed)
 The CodeIgniter server does everything of the simple server, except it also has a templating engine
 built specifically for filling SnipCSS imported code.  The templating engine hooks up CodeIgniter models
-with JQuery selectors to insert records into the Snip HTML.  At first I tried using a normal templating
-engine like Mustache, but there are too many cases to account for... the structure of the html isn't always a simple
-list of repeating items for a list of records.  Multiple records need to be filled in the subitems, often 
-at different levels of the DOM. JQuery is flexible enough to handle it. 
-
-The snip html is stored in the views folder. The css in a css/site/ folder, the images in img/site/ folder of the root
-directory.
+with JQuery selectors to insert records into the Snip HTML.  It is currently unreleased.
 

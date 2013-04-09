@@ -61,6 +61,10 @@ Firebug.registerModule(Firebug.SnipCSS);
 *********** (before this was all global func/vars. It is easier to convert to this than OLN)***********/
 
 //http://yuiblog.com/blog/2007/06/12/module-pattern/
+
+//Put in file snipcss.js
+
+/***********************
 CSSSnip = function () 
 {
 	//private variables and methods are before "return"
@@ -157,7 +161,8 @@ CSSSnip = function ()
 
 		//if we had to remove everything why did it match... well its prob something like
 		//body, table,td,blockquote  etc.  where blockquote wasnt used but td might have been
-		//so just skip it for now.. leave blockquote there... but this is bad because it's affecting my shit... let's try removing it
+		//so just skip it for now.. leave blockquote there... but this is bad because it's affecting my shit... 
+		//let's try removing it in the future
 		if(matchPartsArr.length > 0)  
 		{
 			selText = matchPartsArr.join(" ");        
@@ -198,12 +203,21 @@ CSSSnip = function ()
 			//  var selText = x["rule"].selectorText;
 			//  JQUERY doesn't like the  : visited  a : hover
 			var selText = ruleArr[i].rule["selectorText"];
-			Firebug.Console.log("selText: " + selText);
+			Firebug.Console.log("selText111: " + selText);
 			
 			if(selText === undefined || selText.length <= 0)
 			{
 				continue;
 			}
+			
+			//For some reason SnipCSS crashes on :-moz-any
+			if(selText.indexOf(":-moz-any") >= 0)
+			{
+				Firebug.Console.log("SKIPPING - :-moz-any not copied");
+				continue;				
+			}
+			
+			
 					
 			var selArr = selText.split(",");
 			var modifiedArr = new Array();
@@ -439,6 +453,9 @@ CSSSnip = function ()
 	};
 
 }();
+
+*/
+
 
 /*
 function openUrlNewTab(url) 

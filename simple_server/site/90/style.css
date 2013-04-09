@@ -1,0 +1,5 @@
+/*CSS for id: 90*/
+a {color: #0088CC;text-decoration: none;}
+*|*:-moz-any-link:not(svg|a) {text-decoration: underline;}
+*|*:link {color: #0000EE;}
+:-moz-any-link {cursor: pointer;}

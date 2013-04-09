@@ -1,0 +1,53 @@
+/*CSS for id: 91*/
+article, aside,div, dt, figcaption,footer, form,header, hgroup, html, nav, section {display: block;}
+address, address[dir],article, article[dir], aside, aside[dir], blockquote, blockquote[dir], body, body[dir], caption, caption[dir], center, center[dir], col, col[dir], colgroup, colgroup[dir], dd, dd[dir], dir, dir[dir],div, div[dir], dl, dl[dir], dt, dt[dir], fieldset, fieldset[dir], figcaption, figcaption[dir], figure, figure[dir],footer, footer[dir], form, form[dir],h1, h1[dir], h2, h2[dir], h3, h3[dir], h4, h4[dir], h5, h5[dir], h6, h6[dir],header, header[dir], hgroup, hgroup[dir], hr, hr[dir], html, html[dir], legend, legend[dir],li, li[dir], listing, listing[dir], marquee, marquee[dir], menu, menu[dir], nav, nav[dir], noframes, noframes[dir],ol, ol[dir],p, p[dir], plaintext, plaintext[dir], pre, pre[dir], section, section[dir], summary, summary[dir], table, table[dir], tbody, tbody[dir], td, td[dir], tfoot, tfoot[dir], th, th[dir], thead, thead[dir], tr, tr[dir],ul, ul[dir], xmp, xmp[dir] {unicode-bidi: -moz-isolate;}
+#author-info,article.post, article.page {margin-bottom: 72px;}
+article, aside, details, figcaption, figure,footer,header, hgroup, nav, section {display: block;}
+ section {display: block;}
+ xmp[dir] {unicode-bidi: -moz-isolate;}
+.page-header,.entry-content {word-wrap: break-word;}
+.page-header {margin: 0;}
+.page-header {border-bottom: 1px solid #EEEEEE;margin: 0;padding-bottom: 8px;}
+.page-header h1 {line-height: 1;}
+h1, h2, h3, h4, h5, h6, .clear {clear: both;}
+h1 {font-size: 30px;line-height: 36px;}
+h1, h2, h3, h4, h5, h6 {font-weight: bold;margin: 0;text-rendering: optimizelegibility;}
+h1 {display: block;font-size: 2em;font-weight: bold;margin: 0.67em 0;}
+a {color: #0088CC;text-decoration: none;}
+*|*:link {color: #0000EE;}
+.entry-meta {color: #999999;font-family: "PT Sans","Helvetica Neue",Arial,sans-serif;font-size: 12px;letter-spacing: 1px;padding-top: 4px;text-transform: uppercase;}
+.clearfix:after {clear: both;}
+.clearfix:before,.clearfix:after {content: "";display: table;}
+.clearfix:after {content: "";display: table;}
+.entry-content {word-wrap: break-word;}
+.entry-content {margin-bottom: 10px;}
+.clearfix {}
+.entry-content p {font-family: "Segoe UI","PT Serif",Helvetica,Arial,sans-serif;font-size: 13px;line-height: 26px;}
+p {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 13px;line-height: 18px;margin: 0 0 9px;}
+p, dl, multicol {display: block;margin: 1em 0;}
+ multicol {display: block;margin: 1em 0;}
+strong {font-weight: bold;}
+b,strong {font-weight: bolder;}
+strong {font-weight: bolder;}
+.entry-meta a,.entry-meta a:hover {color: #333333;}
+ article.page {margin-bottom: 72px;}
+ .clear {clear: both;}
+ h6 {font-weight: bold;margin: 0;text-rendering: optimizelegibility;}
+.entry-meta a:hover {color: #333333;}
+img[class*="align"],img[class*="wp-image-"], img[class*="attachment-"] {height: auto;}
+ img[class*="attachment-"] {height: auto;}
+header img,.entry-content img,img,img {max-width: 100%;}
+.aligncenter, div.aligncenter {display: block;margin: 0 auto 20px;}
+img {border: 0 none;height: auto;vertical-align: middle;}
+img {max-width: 100%;}
+ div.aligncenter {display: block;margin: 0 auto 20px;}
+ul {list-style: square outside none;}
+ul,ol {margin: 0 0 9px 25px;padding: 0;}
+ul, menu, dir {-moz-padding-start: 40px;display: block;list-style-type: disc;margin: 1em 0;}
+li {font-family: "Segoe UI","PT Serif",Helvetica,Arial,sans-serif;font-size: 13px;line-height: 22px;}
+li {display: list-item;}
+a img.alignnone {margin: 5px 20px 20px 0;}
+.alignnone {margin: 5px 20px 20px 0;}
+ol {list-style: decimal outside none;}
+ol {margin: 0 0 9px 25px;padding: 0;}
+ol {-moz-padding-start: 40px;display: block;list-style-type: decimal;margin: 1em 0;}
