@@ -1,3 +1,9 @@
+This is my **VERY OLD** version of SnipCSS Firefox extension that used XPCOM and XUL.  
+
+SnipCSS has evolved A LOT since then - the updated Chromium extension is here: 
+
+[https://www.snipcss.com](https://www.snipcss.com)
+
 #SnipCSS
 
 ##DISCLAIMER:
